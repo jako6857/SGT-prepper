@@ -10,6 +10,7 @@ export const getRecords = async (req: Request, res: Response) => {
         category: { slug: { equals: category } },
       },
       select: {
+        id: true,
         name: true,
         slug: true,
         price: true,
